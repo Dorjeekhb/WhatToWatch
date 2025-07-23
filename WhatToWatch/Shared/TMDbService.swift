@@ -76,4 +76,39 @@ class TMDbService {
             }
         }.resume()
     }
+    func fetchTrailer(for type: String, id: Int, completion: @escaping (URL?) -> Void) {
+        let urlString = "https://api.themoviedb.org/3/\(type)/\(id)/videos?api_key=\(apiKey)&language=es-ES"
+
+        guard let url = URL(string: urlString) else {
+            completion(nil)
+            return
+        }
+
+        URLSession.shared.dataTask(with: url) { data, _, _ in
+            guard let data = data else {
+                DispatchQueue.main.async { completion(nil) }
+                return
+            }
+
+            struct VideosResponse: Decodable {
+                struct Video: Decodable {
+                    let key: String
+                    let site: String
+                    let type: String
+                }
+                let results: [Video]
+            }
+
+            let decoded = try? JSONDecoder().decode(VideosResponse.self, from: data)
+            let trailer = decoded?.results.first(where: { $0.site == "YouTube" && $0.type == "Trailer" })
+
+            DispatchQueue.main.async {
+                if let key = trailer?.key {
+                    completion(URL(string: "https://www.youtube.com/watch?v=\(key)"))
+                } else {
+                    completion(nil)
+                }
+            }
+        }.resume()
+    }
 }

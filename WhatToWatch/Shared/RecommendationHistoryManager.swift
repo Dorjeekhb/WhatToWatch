@@ -20,7 +20,6 @@ class RecommendationHistoryManager: ObservableObject {
     func add(_ item: TMDbItem) {
         guard !history.contains(where: { $0.id == item.id }) else { return }
         history.insert(item, at: 0)
-        if history.count > 50 { history.removeLast() }
         save()
     }
 
