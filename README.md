@@ -1,117 +1,124 @@
-# ⌚ WhatToWatch – Recomendador diario para Apple Watch
+# 🎬 WhatToWatch
 
-WhatToWatch es una app desarrollada para watchOS que te sugiere **una película o serie diferente cada día**, basada en los datos de [The Movie Database (TMDb)](https://www.themoviedb.org/). Diseñada para ser rápida, intuitiva y útil directamente desde tu muñeca.
-
-## ✨ Características principales
-
-- 📺 Elige entre series o películas al abrir la app.
-- 🔄 Obtén una recomendación aleatoria y popular desde TMDb.
-- 📝 Lee la sinopsis, puntuación, fecha de estreno y géneros.
-- ⭐ Guarda tus títulos favoritos con un toque (¡y animación de estrella incluida!).
-- 🧑‍🤝‍🧑 Consulta el reparto principal con fotos.
-- ⏱️ Complicación para ver la recomendación diaria directamente en la carátula del reloj.
-- 📚 Historial de recomendaciones recientes.
-
-## 📸 Capturas
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/4.jpeg" alt="Favoritos" width="180"/>
-  <img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/5.jpeg" alt="Reparto" width="180"/>
-</p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/6.png" alt="Detalle Superman" width="180"/>
-  <img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/7.png" alt="Detalle Destino Final" width="180"/>
-</p>
-
-## 🧠 Tecnologías utilizadas
-
-- `SwiftUI`
-- `WidgetKit` para la complicación
-- `URLSession` y `Codable` para llamadas a la API
-- `UserDefaults` para almacenamiento persistente
-- API pública de TMDb
-
-## 📦 Estructura
-
-- `ContentView.swift`: Vista principal con selector de tipo y recomendación aleatoria.
-- `DetailView.swift`: Sinopsis completa y reparto con fotos.
-- `FavoritesView.swift`: Sección de favoritos guardados.
-- `WhatToWatchApp.swift`: Punto de entrada y configuración de entornos.
-- `WhatToWatchComplication.swift`: Implementación de la complicación de watchOS.
-- `TMDbService.swift`: Encapsula las llamadas a la API de TMDb.
-- `FavoritesManager.swift`: Gestión de favoritos.
-- `RecommendationHistoryManager.swift`: Historial local.
-- `TMDbItem.swift`: Modelo de datos compatible con TMDb.
-
-## 🚀 Próximas funciones
-
-- 🎥 Vista previa del tráiler usando `AVKit`.
-- 🔍 Búsqueda manual y filtrado por género o plataforma.
-- 📱 Sincronización con iPhone (versión futura).
-
-## 🔐 API
-
-Esta app utiliza la API de TMDb. Es necesario registrar una cuenta gratuita y generar una API key desde:
-[https://www.themoviedb.org/settings/api](https://www.themoviedb.org/settings/api)
+WhatToWatch is a daily movie and TV show recommender designed for iOS and watchOS. With a minimalist UI and a smart suggestion system, you get a new surprise every day — just tap and go!
 
 ---
 
-# ⌚ WhatToWatch – Daily Recommendation for Apple Watch
+## 📱 iOS App
 
-**WhatToWatch** is a watchOS app that gives you **a new movie or TV show recommendation every day**, powered by [The Movie Database (TMDb)](https://www.themoviedb.org/). Designed to be quick, elegant, and useful directly on your wrist.
+### 🇬🇧 Description
 
-## ✨ Features
+The iOS version of WhatToWatch allows you to:
 
-- 📺 Choose between TV shows or movies.
-- 🔄 Get a popular random suggestion via TMDb.
-- 📝 View synopsis, rating, release date, and genre.
-- ⭐ Tap to add/remove favorites (with animated star!).
-- 🧑‍🤝‍🧑 See main cast with actor photos.
-- ⏱️ Complication support: see daily pick on your watch face.
-- 📚 Local history of recent picks.
+* 🎲 Get a new daily recommendation of a movie or TV show
+* ⭐ Save your favorites
+* 🕰️ Browse your full recommendation history (unlimited)
+* 📽️ View trailers directly from the detail view
+* 💫 Smooth animations and simple design for clarity
+* 🔁 Request a new random recommendation
 
-## 📸 Screenshots
+Everything is stored using `UserDefaults` for simplicity and local persistence.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/4.jpeg" alt="Favorites" width="180"/>
-  <img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/5.jpeg" alt="Cast" width="180"/>
-</p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/6.png" alt="Superman Detail" width="180"/>
-  <img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/7.png" alt="Destino Final Detail" width="180"/>
-</p>
+### 🇪🇸 Descripción
 
-## 🧠 Tech Stack
+La versión para iOS de WhatToWatch te permite:
 
-- `SwiftUI`
-- `WidgetKit` for the complication
-- `URLSession` + `Codable` for API calls
-- `UserDefaults` for persistence
-- TMDb's free API
+* 🎲 Obtener una recomendación diaria de una película o serie
+* ⭐ Guardar tus favoritas
+* 🕰️ Consultar tu historial completo de recomendaciones (sin límite)
+* 📽️ Ver tráilers directamente desde la vista de detalle
+* 💫 Animaciones suaves y un diseño minimalista
+* 🔁 Pedir otra recomendación aleatoria
 
-## 📦 App Structure
-
-- `ContentView.swift`: Main entry with type selector and random pick.
-- `DetailView.swift`: Synopsis and cast view.
-- `FavoritesView.swift`: Saved favorites.
-- `WhatToWatchApp.swift`: App setup and environment injection.
-- `WhatToWatchComplication.swift`: Widget implementation.
-- `TMDbService.swift`: Network layer.
-- `FavoritesManager.swift`: Favorite state management.
-- `RecommendationHistoryManager.swift`: History tracking.
-- `TMDbItem.swift`: Unified model for TMDb content.
-
-## 🚀 Upcoming
-
-- 🎥 Trailer previews using `AVKit`.
-- 🔍 Manual search and filtering by genre/platform.
-- 📱 iPhone support and sync (future version).
-
-## 🔐 API
-
-This app uses the TMDb API. You need a free account and API key from:
-[https://www.themoviedb.org/settings/api](https://www.themoviedb.org/settings/api)
+Todos los datos se almacenan localmente usando `UserDefaults`.
 
 ---
 
-© 2025 Dorjee
+### 📸 Capturas (iOS) / Screenshots (iOS)
+
+| Inicio / Home     | Nueva Recomendación / New Recommendation |
+| ----------------- | ---------------------------------------- |
+| ![1.png](./1.png) | ![2.png](./2.png)                        |
+
+| Favoritos / Favorites | Detalle con tráiler / Detail with Trailer |
+| --------------------- | ----------------------------------------- |
+| ![3.png](./0.png)     | ![0.png](./3.png)                         |
+
+---
+
+## ⌚ watchOS App
+
+### 🇬🇧 Description
+
+The watchOS version provides a lightweight experience:
+
+* ⌚ See today’s recommendation instantly on your wrist
+* ⭐ Favorite or unfavorite directly from your Apple Watch with animation
+* 💬 Read the synopsis and cast
+* 🧠 Syncs seamlessly with iOS app via `App Groups`
+* 🧭 Uses `@AppStorage` to persist favorites and history
+* 🧩 Includes a watchOS complication to display the title and poster on your watch face
+
+> 🎥 Trailer feature was removed on watchOS due to limitations. All trailer functionality lives on iOS.
+
+### 🇪🇸 Descripción
+
+La versión para Apple Watch ofrece una experiencia ligera:
+
+* ⌚ Consulta la recomendación del día directamente desde tu muñeca
+* ⭐ Marca o desmarca favoritas con animación
+* 💬 Lee la sinopsis y el reparto
+* 🧠 Sincronización con la app de iOS mediante `App Groups`
+* 🧭 Persistencia local usando `@AppStorage`
+* 🧩 Incluye una complicación que muestra el título y la imagen en la carátula del reloj
+
+> 🎥 La funcionalidad de tráiler fue eliminada en watchOS por limitaciones técnicas. Los tráilers están disponibles en la app de iOS.
+
+---
+
+### 📸 Capturas (watchOS) / Screenshots (watchOS)
+
+| 🕰️ Complicación del reloj / Watch Face Complication |
+| ---------------------------------------------------- |
+| ![4.png](./6.png)                                    |
+
+| 🧾 Vista de detalle con sinopsis / Detail view with synopsis |
+| ------------------------------------------------------------ |
+| ![5.png](./7.png)                                            |
+
+| ⭐ Favorito animado / Favorite toggle with animation |
+| --------------------------------------------------- |
+| ![6.png](./4.jpeg)                                   |
+
+| Reparto / Cast |
+| -------------------------------------------------------- |
+| ![7.png](./5.jpeg)                                        |
+
+---
+
+## 🛠️ Tecnologías utilizadas / Technologies used
+
+* SwiftUI
+* WidgetKit (for complication)
+* AVKit (iOS trailers)
+* WatchConnectivity (communication Watch ↔ iPhone)
+* TMDb API (recommendations and metadata)
+* UserDefaults & AppStorage (persistence)
+
+---
+
+## 🚀 Cómo usar / How to use
+
+1. Clona el repositorio / Clone the repository
+2. Abre el proyecto en Xcode / Open the project in Xcode
+3. Ejecuta tanto iOS como watchOS / Run both iOS and watchOS targets
+4. Configura tu clave de API / Configure your TMDb API key
+5. Ejecuta en simulador o dispositivo físico / Run on simulator or physical device
+
+---
+
+## 👨‍💻 Autor / Author
+
+Desarrollado **Dorjee** / Developed by **Dorjee**
+
+---
