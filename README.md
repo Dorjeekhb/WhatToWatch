@@ -14,17 +14,14 @@ WhatToWatch es una app desarrollada para watchOS que te sugiere **una película 
 
 ## 📸 Capturas
 
-### ⭐ Favoritos  
-<img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/4.jpeg" alt="Favoritos" width="250"/>
-
-### 🎭 Reparto  
-<img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/5.jpeg" alt="Reparto" width="250"/>
-
-### 🎬 Detalle de Superman  
-<img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/6.png" alt="Superman" width="250"/>
-
-### 🩸 Detalle de Destino Final  
-<img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/7.png" alt="Destino Final" width="250"/>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/4.jpeg" alt="Favoritos" width="180"/>
+  <img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/5.jpeg" alt="Reparto" width="180"/>
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/6.png" alt="Detalle Superman" width="180"/>
+  <img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/7.png" alt="Detalle Destino Final" width="180"/>
+</p>
 
 ## 🧠 Tecnologías utilizadas
 
@@ -75,10 +72,14 @@ Esta app utiliza la API de TMDb. Es necesario registrar una cuenta gratuita y ge
 
 ## 📸 Screenshots
 
-<img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/4.jpeg" alt="Favorites" width="250"/>  
-<img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/5.jpeg" alt="Cast" width="250"/>  
-<img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/6.png" alt="Superman Detail" width="250"/>  
-<img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/7.png" alt="Destino Final Detail" width="250"/>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/4.jpeg" alt="Favorites" width="180"/>
+  <img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/5.jpeg" alt="Cast" width="180"/>
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/6.png" alt="Superman Detail" width="180"/>
+  <img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/7.png" alt="Destino Final Detail" width="180"/>
+</p>
 
 ## 🧠 Tech Stack
 
