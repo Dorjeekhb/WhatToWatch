@@ -12,6 +12,20 @@ WhatToWatch es una app desarrollada para watchOS que te sugiere **una película 
 - ⏱️ Complicación para ver la recomendación diaria directamente en la carátula del reloj.
 - 📚 Historial de recomendaciones recientes.
 
+## 📸 Capturas
+
+### ⭐ Favoritos  
+<img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/4.jpeg" alt="Favoritos" width="250"/>
+
+### 🎭 Reparto  
+<img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/5.jpeg" alt="Reparto" width="250"/>
+
+### 🎬 Detalle de Superman  
+<img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/6.png" alt="Superman" width="250"/>
+
+### 🩸 Detalle de Destino Final  
+<img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/7.png" alt="Destino Final" width="250"/>
+
 ## 🧠 Tecnologías utilizadas
 
 - `SwiftUI`
@@ -58,6 +72,13 @@ Esta app utiliza la API de TMDb. Es necesario registrar una cuenta gratuita y ge
 - 🧑‍🤝‍🧑 See main cast with actor photos.
 - ⏱️ Complication support: see daily pick on your watch face.
 - 📚 Local history of recent picks.
+
+## 📸 Screenshots
+
+<img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/4.jpeg" alt="Favorites" width="250"/>  
+<img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/5.jpeg" alt="Cast" width="250"/>  
+<img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/6.png" alt="Superman Detail" width="250"/>  
+<img src="https://raw.githubusercontent.com/Dorjeekhb/WhatToWatch/main/7.png" alt="Destino Final Detail" width="250"/>
 
 ## 🧠 Tech Stack
 
