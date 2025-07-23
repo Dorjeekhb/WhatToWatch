@@ -78,21 +78,13 @@ La versión para Apple Watch ofrece una experiencia ligera:
 
 ### 📸 Capturas (watchOS) / Screenshots (watchOS)
 
-| 🕰️ Complicación del reloj / Watch Face Complication |
-| ---------------------------------------------------- |
-| ![4.png](./6.png)                                    |
+| 🕰️ Complicación del reloj / Watch Face Complication | 🧾 Detalle con sinopsis / Detail View with Synopsis |
+|------------------------------------------------------|----------------------------------------------------|
+| ![4.png](./6.png)                                    | ![5.png](./7.png)                                  |
 
-| 🧾 Vista de detalle con sinopsis / Detail view with synopsis |
-| ------------------------------------------------------------ |
-| ![5.png](./7.png)                                            |
+| ⭐ Favorito animado / Favorite toggle with Animation  | 🧑‍🤝‍🧑 Reparto / Cast                                 |
+| ![6.png](./4.jpeg)                                   | ![7.png](./5.jpeg)                                 |
 
-| ⭐ Favorito animado / Favorite toggle with animation |
-| --------------------------------------------------- |
-| ![6.png](./4.jpeg)                                   |
-
-| Reparto / Cast |
-| -------------------------------------------------------- |
-| ![7.png](./5.jpeg)                                        |
 
 ---
 
